@@ -8,4 +8,3 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 1,7,thewug_norm_spills_norm_thejuice,fireworks,fireworks,AG,,,,,,black-background,fam
 1,8,thewug_norm_spills_norm_themilk,fireworks,fireworks,AG,,,,,,black-background,fam
 1,9,norm_wherethewug,,,,jogging_s_0,jogging_u_0,right,1,both,black-background,test
-1,10,norm_findthewug,,,,jumpingjacks_s_0,jumpingjacks_u_0,right,1,both,black-background,test
