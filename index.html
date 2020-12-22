@@ -40,13 +40,13 @@ var trial_order = jsPsych.data.getURLVariable('order')
 // use the publish link NOT the sharing link
 
 if (trial_order == "1") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder1.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
 } else if (trial_order =="2") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder2.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
 } else if (trial_order =="3") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder3.csv'
+  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
 } else if (trial_order =="4") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder4.csv'
+  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
 }
 
 //lwl orders
@@ -118,7 +118,7 @@ function createTrials(data) {
     //define set up visual display
     var cur_background = data[i]['background'];
 
-    if (cur_trial_type == "LWL"){
+    if (cur_trial_type == "fam"){
       //defne LWL trials
       var lwl_trials = {
         type: 'audio-button-response-flexiblelocations',
@@ -204,29 +204,7 @@ var imageExt = 'stimuli/images/'
 
 
 var images = [
-"apple01.jpg",
-"apple02.jpg",
-"apple03.jpg",
-"ball01.jpg",
-"ball02.jpg",
-"ball03.jpg",
-"balloons_left.jpg",
-"balloons_right.jpg",
-"beach_left.jpg",
-"beach_right.jpg",
-"black-background.jpg",
-"black.jpg",
-"crayon01.jpg",
-"crayon02.jpg",
-"crayon03.jpg",
-"fireworks_left.jpg",
-"fireworks_right.jpg",
-"ocean_left.jpg",
-"ocean_right.jpg",
-"toothbrush01.jpg",
-"toothbrush02.jpg",
-"toothbrush03.jpg"
-]
+"fireworks.jpg"]
 
 var preload_images=[];
 
@@ -236,31 +214,17 @@ for (var k = 0; k < images.length; k++) {
 
 
 var audio = [
-  "acrossTheUniverse_55dB000.wav",
-  "acrossTheUniverse_55dB004.wav",
-  "acrossTheUniverse_55dB008.wav",
-  "acrossTheUniverse_55dB011.wav",
-  "acrossTheUniverse_55dB016.wav",
-  "acrossTheUniverse_55dB028.wav",
-  "yellow_55dB000.wav",
-  "yellow_55dB009.wav",
-  "yellow_55dB013.wav",
-  "yellow_55dB017.wav",
-  "yellow_55dB026.wav",
   "wow_cool_x4.wav",
-  "check_out.wav",
-  "apple_find.wav",
-  "apple_look.wav",
-  "apple_where.wav",
-  "ball_find.wav",
-  "ball_look.wav",
-  "ball_where.wav",
-  "crayon_find.wav",
-  "crayon_look.wav",
-  "crayon_where.wav",
-  "toothbrush_find.wav",
-  "toothbrush_look.wav",
-  "toothbrush_where.wav"
+  "thewug_norm_drinks_norm_themilk.wav",
+  "thewug_norm_drinks_norm_thejuice.wav",
+  "thewug_norm_eats_norm_thecookie.wav",
+  "thewug_norm_eats_norm_theapple.wav",
+  "thewug_norm_kicks_norm_theapple.wav",
+  "thewug_norm_kicks_norm_theball.wav",
+  "thewug_norm_spills_norm_themilk.wav",
+  "thewug_norm_spills_norm_thejuice.wav",
+  "norm_findthewug.wav",
+  "norm_wherethewug.wav"
 ];
 
 var preload_audio  = [];
@@ -272,19 +236,10 @@ for (var l = 0; l < preload_audio.length; l++) {
 var videoExt = 'stimuli/videos/'
 
 var video = [
-  "apple_typical.mp4",
-  "apple_atypical.mp4",
-  "ball_typical.mp4",
-  "ball_atypical.mp4",
-  "crayon_typical.mp4",
-  "crayon_atypical.mp4",
-  "toothbrush_typical.mp4",
-  "toothbrush_atypical.mp4",
-  "Bubbles6.mp4",
-  "Clouds6.mp4",
-  "Drops6.mp4",
-  "Kaleidoscope6.mp4",
-  "Planets6.mp4"
+  "jogging_s_0.mp4",
+  "jogging_u_0.mp4",
+  "jumpingjacks_s_0.mp4",
+  "jumpingjacks_u_0.mp4"
 ];
 
 var preload_vids=[];
