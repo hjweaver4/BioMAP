@@ -42,11 +42,11 @@ var trial_order = jsPsych.data.getURLVariable('order')
 if (trial_order == "1") {
 	var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
 } else if (trial_order =="2") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
+	var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
 } else if (trial_order =="3") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
+  var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
 } else if (trial_order =="4") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
+  var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
 }
 
 //lwl orders
@@ -120,12 +120,12 @@ function createTrials(data) {
 
     if (cur_trial_type == "fam"){
       //defne LWL trials
-      var lwl_trials = {
+      var familiarizarion_trials = {
         type: 'audio-button-response-flexiblelocations',
         stimulus: cur_stimulus,
         choices: cur_images,
         set_background: cur_background,
-        trial_duration: 4500,
+        trial_duration: 4500, #update based on audio file length
         //tiral_duration: 120000,
         margin_top: ['0px','0px'],
         margin_bottom: ['0px','0px'],
@@ -145,7 +145,7 @@ function createTrials(data) {
           data.correct = data.button_pressed == data.correct_response;
         }
       }
-        timeline.push(lwl_trials);
+        timeline.push(familiarizarion_trials);
     } else {
       //define which video plays first
       if (cur_side == "right") {
@@ -160,14 +160,14 @@ function createTrials(data) {
       }
 
       // define plp trials
-      var plp_trials = {
+      var test_trials = {
         type: 'audio-button-response-flexiblelocations',
 			  preload_video_button: true,
         stimulus: cur_stimulus,
         choices:[cur_left_video,cur_right_video],
         button_html: button_html,
 			  selector_ids: selector_ids,
-        trial_duration: 6400,
+        trial_duration: 6400, #update to trial length
         margin_top: ['0px','0px'],
         margin_bottom: ['0px','0px'],
         margin_left: ['0px','200px'],
@@ -181,6 +181,8 @@ function createTrials(data) {
           left_video: data[i]['left_video'],
           right_video: data[i]['right_video'],
           target_side: data[i]['target_side'],
+          target_label: data[i]['target_label'],
+      		target_side: data[i]['target_side'],
           trial_type: data[i]['trial_type'],
           condition: data[i]['condition'],
           cur_side: data[i]['playing_side'],
@@ -190,7 +192,7 @@ function createTrials(data) {
           data.correct = data.button_pressed == data.correct_response;
         }
       }
-      timeline.push(plp_trials);
+      timeline.push(test_trials);
     }
 }
 
@@ -235,7 +237,8 @@ var audio = [
   "thewug_norm_kicks_norm_theball.wav",
   "thewug_norm_spills_norm_thejuice.wav",
   "thewug_norm_spills_norm_themilk.wav",
-  "wow_cool_x4.wav"
+  "wow_cool_x4.wav",
+  "norm_wherethewug.wav"
 ];
 
 var preload_audio  = [];
