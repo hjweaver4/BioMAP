@@ -7,12 +7,12 @@
 1,6,norm_findthebaby,,,baby,underarmthrow_s_0,underarmthrow_u_0,right,1,both,black-background,practice,test
 1,7,thegirl_kicks_norm_thekita,mountain left,mountain left,AG,,,,,,black-background,practice,fam
 1,8,norm_wheretheball,,,ball,walking_u_0,walking_s_0,left,0,both,black-background,practice,test
-2,9,thewug_norm_drinks_norm_thejuice,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,10,thewug_norm_drinks_norm_themilk,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,11,thewug_norm_eats_norm_theapple,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,12,thewug_norm_eats_norm_thecookie,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,13,thewug_norm_kicks_norm_theapple,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,14,thewug_norm_kicks_norm_theball,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,15,thewug_norm_spills_norm_thejuice,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
-2,16,thewug_norm_spills_norm_themilk,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,9,thewug_drinks_norm_thejuice,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,10,thewug_drinks_norm_themilk,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,11,thewug_eats_norm_theapple,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,12,thewug_eats_norm_thecookie,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,13,thewug_kicks_norm_theapple,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,14,thewug_kicks_norm_theball,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,15,thewug_spills_norm_thejuice,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,16,thewug_spills_norm_themilk,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
 2,17,norm_wherethewug,,,wug,jumpingjacks_s_0,jumpingjacks_u_0,right,1,both,black-background,agent,test
