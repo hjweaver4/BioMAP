@@ -40,13 +40,13 @@ var trial_order = jsPsych.data.getURLVariable('order')
 // use the publish link NOT the sharing link
 
 if (trial_order == "1") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
 } else if (trial_order =="2") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
 } else if (trial_order =="3") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
+  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
 } else if (trial_order =="4") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_sampleOrder.csv'
+  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/BioMAP/orders/bioMAP_order1.csv'
 }
 
 //lwl orders
@@ -138,6 +138,7 @@ function createTrials(data) {
     		target_label: data[i]['target_label'],
     		target_side: data[i]['target_side'],
         trial_type: data[i]['trial_type'],
+        condition: data[i]['condition'],
     		correct_response: data[i]['correct_response'],
     		background: data[i]['background']},
         on_finish: function(data) {
