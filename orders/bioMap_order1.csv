@@ -1,81 +1,18 @@
 ﻿block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_video,right_video,target_side,correct_response,playing_side,background,condition,trial_type
-1,1,boy_drinks_milk,beach_left,beach_right,AG,,,,,,black-background,practice,fam
-1,2,where_boy,,,,joggin,jogging invert,left,0,both,black-background,practice,test
-1,3,doctor_eats_apple,balloons_left,balloons_right,AG,,,,,,black-background,practice,fam
-1,4,find_apple,,,,jumprope ,jumprope invert,right,1,both,black-background,practice,test
-1,5,baby_eats_cookie,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
-1,6,find_baby,,,,highkick invert,highkick,right,1,both,black-background,practice,test
-1,7,girl_kicks_ball,clouds_left,clouds_right,AG,,,,,,black-background,practice,fam
-1,8,where_ball,,,,jumping jax invert,jumping jax,left,0,both,black-background,practice,test
-2,9,wug_spills_milk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,10,wug_eats_cookie,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,11,wug_drinks_milk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,12,wug_kicks_ball,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,13,wug_drinks_juice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,14,wug_spills_juice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,15,wug_kicks_apple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,16,wug_eats_apple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-2,17,find_wug,,,,highkick invert,highkick ,right,1,both,black-background,agent,test
-3,18,boy_kicks_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,19,baby_spills_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,20,doctor_eats_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,21,girl_drinks_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,22,girl_kicks_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,23,doctor_spills_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,24,boy_drinks_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,25,baby_eats_toma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-3,26,where_toma,,,,joggin invert,jogging ,left,0,both,black-background,patient,test
-4,27,baby_drinks_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,28,boy_eats_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,29,doctor_drinks_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,30,doctor_kicks_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,31,boy_spills_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,32,girl_eats_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,33,baby_kicks_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,34,girl_spills_cheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-4,35,find_cheem,,,,highkick ,highkick invert,right,1,both,black-background,patient,test
-5,36,blick_drinks_milk,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,37,blick_kicks_apple,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,38,blick_eats_apple,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,39,blick_eats_cookie,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,40,blick_spills_juice,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,41,blick_kicks_aball,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,42,blick_spills_milk,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,43,blick_drinks_juice,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-5,44,find_blick,,,,joggin,joggin invert,left,0,both,black-background,agent,test
-6,45,baby_drinks_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,46,boy_eats_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,47,doctor_drinks_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,48,doctor_kicks_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,49,boy_spills_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,50,girl_eats_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,51,baby_kicks_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,52,girl_spills_dax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-6,53,where_dax,,,,jumprope invert,jumprope,left,0,both,black-background,patient,test
-7,54,modi_eats_apple,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,55,modi_spills_juice,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,56,modi_kicks_ball,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,57,modi_drinks_juice,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,58,modi_kicks_apple,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,59,modi_eats_apple,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,60,modi_drinks_milk,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,61,modi_spills_milk,clouds_left,clouds_right,AG,,,,,,black-background,agent,fam
-7,62,find_modi,,,,jumpingjax invert,jumpingjax,right,1,both,black-background,agent,test
-8,63,kita_kicks_ball,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,64,kita_eats_cookie,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,65,kita_spills_milk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,66,kita_eats_apple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,67,kita_drinks_juice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,68,kita_spills_juice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,69,kita_drinks_milk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,70,kita_kicks_apple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-8,71,where_kita,,,,jumpingjax ,jumpjax invert,left,0,both,black-background,agent,test
-9,72,doctor_spills_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,73,boy_drinks_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,74,baby_eats_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,75,girl_kicks_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,76,baby_spills_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,77,boy_kicks_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,78,girl_eat_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,79,girl_drinks_noop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-9,80,where_noop,beach_left,beach_right,,jumprope,jumprope invert,right,1,both,black-background,patient,test
+1,1,theboy_drinks_norm_theblick,beach_left,beach_right,AG,,,,,,black-background,practice,fam
+1,2,norm_wheretheboy,,,,jogging_u_0,jogging_s_0,left,0,both,black-background,practice,test
+1,3,thedoctor_eats_norm_themodi,balloons_left,balloons_right,AG,,,,,,black-background,practice,fam
+1,4,norm_findtheapple,,,,jumpingjacks_s_0,jumpingjacks_u_0,right,1,both,black-background,practice,test
+1,5,thebaby_spills_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
+1,6,norm_findthebaby,,,,underarmthrow_s_0,underarmthrow_u_0,right,1,both,black-background,practice,test
+1,7,thegirl_kicks_norm_thekita,clouds_left,clouds_right,AG,,,,,,black-background,practice,fam
+1,8,norm_wheretheball,,,,walking_u_0,walking_s_0,left,0,both,black-background,practice,test
+2,9,thewug_norm_drinks_norm_thejuice,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,10,thewug_norm_drinks_norm_themilk,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,11,thewug_norm_eats_norm_theapple,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,12,thewug_norm_eats_norm_thecookie,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,13,thewug_norm_kicks_norm_theapple,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,14,thewug_norm_kicks_norm_theball,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,15,thewug_norm_spills_norm_thejuice,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,16,thewug_norm_spills_norm_themilk,hotairballoons,hotairballoons,AG,,,,,,black-background,agent,fam
+2,17,norm_findthewug,,,,jumpingjacks_s_0,jumpingjacks_u_0,right,1,both,black-background,agent,test
