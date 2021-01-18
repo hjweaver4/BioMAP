@@ -125,7 +125,7 @@ function createTrials(data) {
         stimulus: cur_stimulus,
         choices: cur_images,
         set_background: cur_background,
-        trial_duration: 9435,
+        trial_duration: 2670,
         //tiral_duration: 120000,
         margin_top: ['0px','0px'],
         margin_bottom: ['0px','0px'],
@@ -276,7 +276,7 @@ jsPsych.init({ //js.psych initializes
   preload_audio:preload_audio,
   preload_images:preload_images,
   preload_video: preload_vids,
-	default_iti: 500,
+	default_iti: 0,
   on_finish: function() {
     //jsPsych.data.displayData();
   }
