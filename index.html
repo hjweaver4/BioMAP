@@ -6,7 +6,8 @@
   <meta charset="utf-8"/>
   <script src="jspsych-6.1.0/jspsych.js"> </script>
   <script src="jspsych-6.1.0/plugins/jspsych-audio-keyboard-response.js"></script>
-  <script src="jspsych-6.1.0/plugins/jspsych-call-function.js"></script>
+  <script src="jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+  <script src="jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
   <script src="jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
   <script src="jspsych-6.1.0/plugins/jspsych-audio-button-response-flexiblelocations.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js"></script>
@@ -42,11 +43,11 @@ var trial_order = jsPsych.data.getURLVariable('order')
 if (trial_order == "1") {
 	var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
 } else if (trial_order =="2") {
-	var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
+	var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order2.csv'
 } else if (trial_order =="3") {
-  var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
+  var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order3.csv'
 } else if (trial_order =="4") {
-  var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order1.csv'
+  var publicSpreadsheetUrl = 'https://raw.githubusercontent.com/hjweaver4/BioMAP/gh-pages/orders/bioMap_order4.csv'
 }
 
 //lwl orders
@@ -237,8 +238,8 @@ var audio = [
   "thewug_kicks_norm_theball.wav",
   "thewug_spills_norm_thejuice.wav",
   "thewug_spills_norm_themilk.wav",
-  "wow_cool_x4.wav",
-  "norm_wherethewug.wav"
+  "norm_wherethewug.wav",
+  "wow_cool_x4.wav"
 ];
 
 var preload_audio  = [];
@@ -273,7 +274,7 @@ function startExperiment(data) {
   // generate all the plugins
 jsPsych.init({ //js.psych initializes
   timeline: timeline,
-  //preload_audio:preload_audio,
+  preload_audio:preload_audio,
   preload_images:preload_images,
   preload_video: preload_vids,
 	default_iti: 0,
