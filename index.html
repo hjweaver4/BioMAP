@@ -87,7 +87,7 @@ function createTrials(data) {
 
   var audio_test = {
     type: "audio-keyboard-response",
-    stimulus:"stimuli/sounds/wow_cool_x4.wav",
+    stimulus:"stimuli/sounds/wow_cool_x4.mp3",
     choices:['space'],
     prompt: "<p> Please turn the volume up or down, so that the volume resembles a person's voice in the room. <br> Please tell the experimenter when you think the level is comfortable for your baby.</br> </p>"
   }
@@ -104,7 +104,7 @@ function createTrials(data) {
   for (var i = 0; i < expLength; i++) {
     //define stimuli variables
     var cur_trial_type = data[i]['trial_type'];
-    var cur_stimulus = audioExt+data[i]['auditory_stimulus']+".wav";
+    var cur_stimulus = audioExt+data[i]['auditory_stimulus']+".mp3";
     var cur_images = [imageStart+data[i]['left_image']+imageStop, imageStart+data[i]['right_image']+imageStop];
     var cur_left_video = videoStart+data[i]['left_video']+videoStop;
     var cur_right_video = videoStart+data[i]['right_video']+videoStop;
@@ -222,24 +222,24 @@ for (var k = 0; k < images.length; k++) {
 
 
 var audio = [
-  "theboy_drinks_norm_themilk.wav",
-  "norm_wheretheboy.wav",
-  "thedoctor_eats_norm_theapple.wav",
-  "norm_findtheapple.wav",
-  "thebaby_spills_norm_thejuice.wav",
-  "norm_findthebaby.wav",
-  "thegirl_kicks_norm_theball.wav",
-  "norm_wheretheball.wav",
-  "thewug_drinks_norm_thejuice.wav",
-  "thewug_drinks_norm_themilk.wav",
-  "thewug_eats_norm_theapple.wav",
-  "thewug_eats_norm_thecookie.wav",
-  "thewug_kicks_norm_theapple.wav",
-  "thewug_kicks_norm_theball.wav",
-  "thewug_spills_norm_thejuice.wav",
-  "thewug_spills_norm_themilk.wav",
-  "norm_wherethewug.wav",
-  "wow_cool_x4.wav"
+  "theboy_drinks_norm_themilk.mp3",
+  "norm_wheretheboy.mp3",
+  "thedoctor_eats_norm_theapple.mp3",
+  "norm_findtheapple.mp3",
+  "thebaby_spills_norm_thejuice.mp3",
+  "norm_findthebaby.mp3",
+  "thegirl_kicks_norm_theball.mp3",
+  "norm_wheretheball.mp3",
+  "thewug_drinks_norm_thejuice.mp3",
+  "thewug_drinks_norm_themilk.mp3",
+  "thewug_eats_norm_theapple.mp3",
+  "thewug_eats_norm_thecookie.mp3",
+  "thewug_kicks_norm_theapple.mp3",
+  "thewug_kicks_norm_theball.mp3",
+  "thewug_spills_norm_thejuice.mp3",
+  "thewug_spills_norm_themilk.mp3",
+  "norm_wherethewug.mp3",
+  "wow_cool_x4.mp3"
 ];
 
 var preload_audio  = [];
