@@ -7,7 +7,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 1,6,theboy_spills_norm_thejuice,beach_left,beach_right,AG,,,,,,black-background,practice,fam
 1,7,theboy_eats_norm_theapple,beach_left,beach_right,AG,,,,,,black-background,practice,fam
 1,8,theboy_drinks_norm_themilk,beach_left,beach_right,AG,,,,,,black-background,practice,fam
-1,9,norm_wheretheboy,,,,jogging_u_5020,jogging_s_5020,left,0,both,black-background,practice,test
+1,9,norm_wheretheboy,,,,jogging_u_5520,jogging_s_5520,left,0,both,black-background,practice,test
 2,10,thegirl_spills_norm_themilk,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
 2,11,thedoctor_drinks_norm_themilk,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
 2,12,theboy_spills_norm_themilk,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
@@ -16,7 +16,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 2,15,thegirl_drinks_norm_themilk,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
 2,16,thebaby_spills_norm_themilk,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
 2,17,theboy_drinks_norm_themilk,fireworks_left,fireworks_right,AG,,,,,,black-background,practice,fam
-2,18,norm_findthemilk,,,,jumpingjacks_s_5020,jumpingjacks_u_5020,left,0,both,black-background,practice,test
+2,18,norm_findthemilk,,,,jumpingjacks_s_5520,jumpingjacks_u_5520,left,0,both,black-background,practice,test
 3,19,thewug_spills_norm_themilk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 3,20,thewug_eats_norm_thecookie,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 3,21,thewug_drinks_norm_themilk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
@@ -25,7 +25,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 3,24,thewug_eats_norm_theapple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 3,25,thewug_kicks_norm_theball,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 3,26,thewug_spills_norm_thejuice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-3,27,norm_findthewug,,,,walking_s_5020,walking_u_5020,right,1,both,black-background,agent,test
+3,27,norm_findthewug,,,,walking_s_5520,walking_u_5520,right,1,both,black-background,agent,test
 4,28,theboy_kicks_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 4,29,thebaby_spills_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 4,30,thedoctor_eats_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
@@ -34,7 +34,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 4,33,thedoctor_spills_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 4,34,theboy_drinks_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 4,35,thebaby_eats_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-4,36,norm_wherethetoma,,,,jogging_s_5020,jogging_u_5020,left,0,both,black-background,patient,test
+4,36,norm_wherethetoma,,,,jogging_s_5520,jogging_u_5520,left,0,both,black-background,patient,test
 5,37,thebaby_drinks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 5,38,theboy_eats_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 5,39,thedoctor_drinks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
@@ -43,7 +43,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 5,42,thegirl_eats_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 5,43,thebaby_kicks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 5,44,thegirl_spills_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-5,45,norm_findthecheem,,,,walking_u_5020,walking_s_5020,right,1,both,black-background,patient,test
+5,45,norm_findthecheem,,,,walking_u_5520,walking_s_5520,right,1,both,black-background,patient,test
 6,46,theblick_drinks_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 6,47,theblick_kicks_norm_theapple,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 6,48,theblick_spills_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
@@ -52,7 +52,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 6,51,theblick_kicks_norm_theball,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 6,52,theblick_eats_norm_theapple,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 6,53,theblick_drinks_norm_thejuice,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
-6,54,norm_findtheblick,,,,jogging_u_5020,jogging_s_5020,left,0,both,black-background,agent,test
+6,54,norm_findtheblick,,,,jogging_u_5520,jogging_s_5520,left,0,both,black-background,agent,test
 7,55,thebaby_drinks_norm_thedax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 7,56,theboy_eats_norm_thedax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 7,57,thedoctor_drinks_norm_thedax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
@@ -61,7 +61,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 7,60,thegirl_eats_norm_thedax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 7,61,thebaby_kicks_norm_thedax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 7,62,thegirl_spills_norm_thedax,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-7,63,norm_wherethedax,,,,underarmthrow_s_5020,underarmthrow_u_5020,left,0,both,black-background,patient,test
+7,63,norm_wherethedax,,,,underarmthrow_s_5520,underarmthrow_u_5520,left,0,both,black-background,patient,test
 8,64,themodi_spills_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 8,65,themodi_spills_norm_thejuice,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 8,66,themodi_kicks_norm_theball,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
@@ -70,7 +70,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 8,69,themodi_eats_norm_thecookie,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 8,70,themodi_drinks_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 8,71,themodi_eats_norm_theapple,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
-8,72,norm_findthemodi,,,,jumpingjacks_s_5020,jumpingjacks_u_5020,right,1,both,black-background,agent,test
+8,72,norm_findthemodi,,,,jumpingjacks_s_5520,jumpingjacks_u_5520,right,1,both,black-background,agent,test
 9,73,thekita_drinks_norm_thejuice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 9,74,thekita_eats_norm_thecookie,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 9,75,thekita_spills_norm_themilk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
@@ -79,7 +79,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 9,78,thekita_spills_norm_thejuice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 9,79,thekita_drinks_norm_themilk,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 9,80,thekita_kicks_norm_theapple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-9,81,norm_wherethekita,,,,jumpingjacks_u_5020,jumpingjacks_s_5020,left,0,both,black-background,agent,test
+9,81,norm_wherethekita,,,,jumpingjacks_u_5520,jumpingjacks_s_5520,left,0,both,black-background,agent,test
 10,82,thedoctor_spills_norm_thenoop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 10,83,theboy_drinks_norm_thenoop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 10,84,thebaby_eats_norm_thenoop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
@@ -88,4 +88,4 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 10,87,theboy_kicks_norm_thenoop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 10,88,thedoctor_eats_norm_thenoop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 10,89,thegirl_drinks_norm_thenoop,beach_left,beach_right,AG,,,,,,black-background,patient,fam
-10,90,norm_wherethenoop,beach_left,beach_right,,underarmthrow_u_5020,underarmthrow_s_5020,right,1,both,black-background,patient,test
+10,90,norm_wherethenoop,beach_left,beach_right,,underarmthrow_u_5520,underarmthrow_s_5520,right,1,both,black-background,patient,test
