@@ -52,7 +52,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 6,51,thegirl_eats_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 6,52,thebaby_kicks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 6,53,thegirl_spills_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-5,54,norm_findthecheem,,,,walking_u_5520,walking_s_5520,right,1,both,black-background,patient,test
+5,54,norm_findthecheem,,,,walker_u_5520,walker_s_5520,right,1,both,black-background,patient,test
 7,55,theblick_drinks_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 7,56,theblick_kicks_norm_theapple,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 7,57,theblick_spills_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
@@ -70,7 +70,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 8,69,thegirl_eats_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 8,70,thebaby_kicks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 8,71,thegirl_spills_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-8,72,norm_findthecheem,,,,walking_u_5520,walking_s_5520,right,1,both,black-background,patient,test
+8,72,norm_findthecheem,,,,walker_u_5520,walker_s_5520,right,1,both,black-background,patient,test
 9,73,theboy_kicks_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 9,74,thebaby_spills_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 9,75,thedoctor_eats_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
@@ -88,4 +88,4 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 10,87,thewug_eats_norm_theapple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 10,88,thewug_kicks_norm_theball,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 10,89,thewug_spills_norm_thejuice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-10,90,norm_findthewug,,,,walking_s_5520,walking_u_5520,right,1,both,black-background,agent,test
+10,90,norm_findthewug,,,,walker_s_5520,walker_u_5520,right,1,both,black-background,agent,test

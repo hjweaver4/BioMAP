@@ -25,7 +25,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 3,24,thewug_eats_norm_theapple,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 3,25,thewug_kicks_norm_theball,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
 3,26,thewug_spills_norm_thejuice,balloons_left,balloons_right,AG,,,,,,black-background,agent,fam
-3,27,norm_findthewug,,,,walking_s_5520,walking_u_5520,right,1,both,black-background,agent,test
+3,27,norm_findthewug,,,,walker_s_5520,walker_u_5520,right,1,both,black-background,agent,test
 4,28,theboy_kicks_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 4,29,thebaby_spills_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
 4,30,thedoctor_eats_norm_thetoma,beach_left,beach_right,AG,,,,,,black-background,patient,fam
@@ -43,7 +43,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 5,42,thegirl_eats_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 5,43,thebaby_kicks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 5,44,thegirl_spills_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-5,45,norm_findthecheem,,,,walking_u_5520,walking_s_5520,right,1,both,black-background,patient,test
+5,45,norm_findthecheem,,,,walker_u_5520,walker_s_5520,right,1,both,black-background,patient,test
 6,46,theblick_drinks_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 6,47,theblick_kicks_norm_theapple,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 6,48,theblick_spills_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
