@@ -32,7 +32,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 4,31,thegirl_kicks_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 4,32,thebaby_spills_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 4,33,theboy_kicks_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
-4,34,thegirl_eat_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
+4,34,thegirl_eats_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 4,35,thegirl_drinks_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 4,36,norm_wherethekita,,,,jumpingjacks_u_5520,jumpingjacks_s_5520,right,0,both,black-background,patient,test
 5,37,thebaby_drinks_norm_themodi,mountain_left,mountain_right,AG,,,,,,black-background,patient,fam

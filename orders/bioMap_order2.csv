@@ -77,7 +77,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 9,76,thegirl_kicks_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 9,77,thebaby_spills_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 9,78,theboy_kicks_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
-9,79,thegirl_eat_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
+9,79,thegirl_eats_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 9,80,thegirl_drinks_norm_thekita,balloons_left,balloons_right,AG,,,,,,black-background,patient,fam
 9,81,norm_wherethekita,,,,jumpingjacks_u_5520,jumpingjacks_s_5520,right,0,both,black-background,patient,test
 10,82,thenoop_spills_norm_thejuice,beach_left,beach_right,AG,,,,,,black-background,agent,fam
