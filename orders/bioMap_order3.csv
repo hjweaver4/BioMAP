@@ -52,7 +52,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 6,51,thegirl_eats_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 6,52,thebaby_kicks_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
 6,53,thegirl_spills_norm_thecheem,fireworks_left,fireworks_right,AG,,,,,,black-background,patient,fam
-5,54,norm_findthecheem,,,,walker_u_5520,walker_s_5520,right,1,both,black-background,patient,test
+6,54,norm_findthecheem,,,,walker_u_5520,walker_s_5520,right,1,both,black-background,patient,test
 7,55,theblick_drinks_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 7,56,theblick_kicks_norm_theapple,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
 7,57,theblick_spills_norm_themilk,mountain_left,mountain_right,AG,,,,,,black-background,agent,fam
