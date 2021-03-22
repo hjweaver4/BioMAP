@@ -87,7 +87,7 @@ function createTrials(data) {
 
   var audio_test = {
     type: "audio-keyboard-response",
-    stimulus:"stimuli/sounds/wow_cool_x4.mp3",
+    stimulus:"stimuli/sounds/wow_cool_x4.wav",
     choices:['space'],
     prompt: "<p> Please turn the volume up or down, so that the volume resembles a person's voice in the room. <br> Please tell the experimenter when you think the level is comfortable for your baby.</br> </p>"
   }
@@ -95,8 +95,8 @@ function createTrials(data) {
 
   var expLength = data.length;
   var audioExt="stimuli/sounds/"
-  var imageStart='<img src= "stimuli/images/'
-  var imageStop='.jpg"  title = "" width="300" height="300">'
+  //var imageStart='<img src= "stimuli/images/'
+  //var imageStop='.jpg"  title = "" width="300" height="300">'
   var videoStart = "stimuli/videos/"
   var videoStop = ".mp4"
 
@@ -104,39 +104,54 @@ function createTrials(data) {
   for (var i = 0; i < expLength; i++) {
     //define stimuli variables
     var cur_trial_type = data[i]['trial_type'];
-    var cur_stimulus = audioExt+data[i]['auditory_stimulus']+".mp3";
-    var cur_images = [imageStart+data[i]['left_image']+imageStop, imageStart+data[i]['right_image']+imageStop];
+    var cur_stimulus = audioExt+data[i]['auditory_stimulus']+".wav";
+    //var cur_images = [imageStart+data[i]['left_image']+imageStop, imageStart+data[i]['right_image']+imageStop];
     var cur_left_video = videoStart+data[i]['left_video']+videoStop;
     var cur_right_video = videoStart+data[i]['right_video']+videoStop;
     var cur_side = data[i]['playing_side'];
 
     //define html buttons
-    var cur_left_video_button = '<div><video id="left-video" width="400" ></div>';
-    var cur_right_video_button = '<div><video id="right-video" width="400" ></div>';
-    var cur_left_video_button_play = '<div><video id="left-video-play" width="600" autoplay></div>';
-    var cur_right_video_button_play = '<div><video id="right-video-play" width="600" autoplay></div>';
+    var cur_left_video_button = '<div><video id="left-video" width="500" ></div>';
+    var cur_right_video_button = '<div><video id="right-video" width="500" ></div>';
+    var cur_left_video_button_play = '<div><video id="left-video-play" width="500" autoplay></div>';
+    var cur_right_video_button_play = '<div><video id="right-video-play" width="500" autoplay></div>';
 
     //define set up visual display
     var cur_background = data[i]['background'];
 
     if (cur_trial_type == "fam"){
-      //defne LWL trials
+      if (cur_side == "right") {
+        var button_html = [cur_left_video_button,cur_right_video_button_play];
+		var selector_ids = ['left-video','right-video-play'];
+      } else if (cur_side == "left"){
+        var button_html = [cur_left_video_button_play,cur_right_video_button];
+		var selector_ids = ['left-video-play','right-video'];
+      } else {
+        var button_html = [cur_left_video_button_play,cur_right_video_button_play];
+		    var selector_ids = ['left-video-play','right-video-play'];
+      }
+
+      //defne fam trials
       var familiarizarion_trials = {
         type: 'audio-button-response-flexiblelocations',
+        preload_video_button: true,
         stimulus: cur_stimulus,
-        choices: cur_images,
+        choices:[cur_left_video,cur_right_video],
+        button_html: button_html,
+			  selector_ids: selector_ids,
+        //choices: cur_images,
         set_background: cur_background,
-        trial_duration: 3669,
+        trial_duration: 2773,
         //tiral_duration: 120000,
         margin_top: ['0px','0px'],
         margin_bottom: ['0px','0px'],
-        margin_left: ['0px','250px'],
-        margin_right: ['250px','0px'],
+        margin_left: ['0px','0px'],
+        margin_right: ['0px','0px'],
         response_ends_trial: false,
         data:{
-    		left_image: data[i]['left_image'],
-    		right_image: data[i]['right_image'],
-    		target_label: data[i]['target_label'],
+    		left_video: data[i]['left_video'],
+    		right_video: data[i]['right_video'],
+    		//target_label: data[i]['target_label'],
     		target_side: data[i]['target_side'],
         trial_type: data[i]['trial_type'],
         condition: data[i]['condition'],
@@ -171,8 +186,8 @@ function createTrials(data) {
         trial_duration: 5520,
         margin_top: ['0px','0px'],
         margin_bottom: ['0px','0px'],
-        margin_left: ['0px','0px'],
-        margin_right: ['0px','0px'],
+        margin_left: ['0px','200px'],
+        margin_right: ['200px','0px'],
         response_possible: false,
         post_trial_gap: 1000,
         response_ends_trial: false,
@@ -205,191 +220,85 @@ function createTrials(data) {
 };
 
 
-var imageExt = 'stimuli/images/'
+//var imageExt = 'stimuli/images/'
 
 
-var images = [
-"fireworks_left.jpg",
-"fireworks_right.jpg",
-"beach_left.jpg",
-"beach_right.jpg",
-"balloons_left.jpg",
-"balloons_right.jpg",
-"mountain_left.jpg",
-"mountain_right.jpg"]
+//var images = [
+//"fireworks_left.jpg",
+//"fireworks_right.jpg",
+//"beach_left.jpg",
+//"beach_right.jpg",
+//"balloons_left.jpg",
+//"balloons_right.jpg",
+//"mountain_left.jpg",
+//"mountain_right.jpg"]
 
-var preload_images=[];
+//var preload_images=[];
 
-for (var k = 0; k < images.length; k++) {
-	preload_images.push(imageExt+images[k]);
-};
+//for (var k = 0; k < images.length; k++) {
+	//preload_images.push(imageExt+images[k]);
+//};
 
 
 var audio = [
-  "theboy_drinks_norm_themilk.mp3",
-  "thegirl_spills_norm_themilk.mp3",
-"thedoctor_drinks_norm_themilk.mp3",
-"theboy_spills_norm_themilk.mp3",
-"thebaby_drinks_norm_themilk.mp3",
-"thedoctor_spills_norm_themilk.mp3",
-"thegirl_drinks_norm_themilk.mp3",
-"thebaby_spills_norm_themilk.mp3",
-"theboy_drinks_norm_themilk.mp3",
-"norm_findthemilk.mp3",
-"theboy_kicks_norm_theapple.mp3",
-"theboy_eats_norm_thecookie.mp3",
-"theboy_spills_norm_themilk.mp3",
-"theboy_drinks_norm_thejuice.mp3",
-"theboy_kicks_norm_theball.mp3",
-"theboy_spills_norm_thejuice.mp3",
-"theboy_eats_norm_theapple.mp3",
-"theboy_drinks_norm_themilk.mp3",
-"norm_wheretheboy.mp3",
-"thewug_drinks_norm_thejuice.mp3",
-  "thewug_drinks_norm_themilk.mp3",
-  "thewug_eats_norm_theapple.mp3",
-  "thewug_eats_norm_thecookie.mp3",
-  "thewug_kicks_norm_theapple.mp3",
-  "thewug_kicks_norm_theball.mp3",
-  "thewug_spills_norm_thejuice.mp3",
-  "thewug_spills_norm_themilk.mp3",
-  "norm_wherethewug.mp3",
-  "theboy_kicks_norm_thetoma.mp3",
-  "thebaby_spills_norm_thetoma.mp3",
-  "thedoctor_eats_norm_thetoma.mp3",
-  "thegirl_drinks_norm_thetoma.mp3",
-  "thegirl_kicks_norm_thetoma.mp3",
-  "thedoctor_spills_norm_thetoma.mp3",
-  "theboy_drinks_norm_thetoma.mp3",
-  "thebaby_eats_norm_thetoma.mp3",
-  "norm_wherethetoma.mp3",
-  "thebaby_drinks_norm_thecheem.mp3",
-  "theboy_eats_norm_thecheem.mp3",
-  "thedoctor_drinks_norm_thecheem.mp3",
-  "thedoctor_kicks_norm_thecheem.mp3",
-  "theboy_spills_norm_thecheem.mp3",
-  "thegirl_eats_norm_thecheem.mp3",
-  "thebaby_kicks_norm_thecheem.mp3",
-  "thegirl_spills_norm_thecheem.mp3",
-  "norm_findthecheem.mp3",
-  "theblick_drinks_norm_themilk.mp3",
-  "theblick_kicks_norm_theapple.mp3",
-  "theblick_eats_norm_theapple.mp3",
-  "theblick_eats_norm_thecookie.mp3",
-  "theblick_spills_norm_thejuice.mp3",
-  "theblick_kicks_norm_theball.mp3",
-  "theblick_spills_norm_themilk.mp3",
-  "theblick_drinks_norm_thejuice.mp3",
-  "norm_findtheblick.mp3",
-  "thebaby_drinks_norm_thedax.mp3",
-  "theboy_eats_norm_thedax.mp3",
-  "thedoctor_drinks_norm_thedax.mp3",
-  "thedoctor_kicks_norm_thedax.mp3",
-  "theboy_spills_norm_thedax.mp3",
-  "thegirl_eats_norm_thedax.mp3",
-  "thebaby_kicks_norm_thedax.mp3",
-  "thegirl_spills_norm_thedax.mp3",
-  "norm_wherethedax.mp3",
-  "themodi_eats_norm_theapple.mp3",
-  "themodi_spills_norm_thejuice.mp3",
-  "themodi_kicks_norm_theball.mp3",
-  "themodi_drinks_norm_thejuice.mp3",
-  "themodi_kicks_norm_theapple.mp3",
-  "themodi_eats_norm_theapple.mp3",
-  "themodi_drinks_norm_themilk.mp3",
-  "themodi_spills_norm_themilk.mp3",
-  "norm_findthemodi.mp3",
-  "thekita_kicks_norm_theball.mp3",
-  "thekita_eats_norm_thecookie.mp3",
-  "thekita_spills_norm_themilk.mp3",
-  "thekita_eats_norm_theapple.mp3",
-  "thekita_drinks_norm_thejuice.mp3",
-  "thekita_spills_norm_thejuice.mp3",
-  "thekita_drinks_norm_themilk.mp3",
-  "thekita_kicks_norm_theapple.mp3",
-  "norm_wherethekita.mp3",
-  "thedoctor_spills_norm_thenoop.mp3",
-  "theboy_drinks_norm_thenoop.mp3",
-  "thebaby_eats_norm_thenoop.mp3",
-  "thegirl_kicks_norm_thenoop.mp3",
-  "thebaby_spills_norm_thenoop.mp3",
-  "theboy_kicks_norm_thenoop.mp3",
-  "thedoctor_eats_norm_thenoop.mp3",
-  "thegirl_drinks_norm_thenoop.mp3",
-  "norm_wherethenoop.mp3",
-  "theboy_kicks_norm_thewug.mp3",
-"thebaby_spills_norm_thewug.mp3",
-"thedoctor_eats_norm_thewug.mp3",
-"thegirl_drinks_norm_thewug.mp3",
-"thegirl_kicks_norm_thewug.mp3",
-"thedoctor_spills_norm_thewug.mp3",
-"theboy_drinks_norm_thewug.mp3",
-"thebaby_eats_norm_thewug.mp3",
-"norm_findthewug.mp3",
-"thetoma_spills_norm_themilk.mp3",
-"thetoma_eats_norm_thecookie.mp3",
-"thetoma_drinks_norm_themilk.mp3",
-"thetoma_kicks_norm_theball.mp3",
-"thetoma_drinks_norm_thejuice.mp3",
-"thetoma_spills_norm_thejuice.mp3",
-"thetoma_kicks_norm_theapple.mp3",
-"thetoma_eats_norm_theapple.mp3",
-"norm_wherethetoma.mp3",
-"thecheem_drinks_norm_themilk.mp3",
-"thecheem_kicks_norm_theapple.mp3",
-"thecheem_eats_norm_theapple.mp3",
-"thecheem_eats_norm_thecookie.mp3",
-"thecheem_spills_norm_thejuice.mp3",
-"thecheem_kicks_norm_theball.mp3",
-"thecheem_spills_norm_themilk.mp3",
-"thecheem_drinks_norm_thejuice.mp3",
-"norm_findthecheem.mp3",
-"thebaby_drinks_norm_theblick.mp3",
-"theboy_eats_norm_theblick.mp3",
-"thedoctor_drinks_norm_theblick.mp3",
-"thedoctor_kicks_norm_theblick.mp3",
-"theboy_spills_norm_theblick.mp3",
-"thegirl_eats_norm_theblick.mp3",
-"thebaby_kicks_norm_theblick.mp3",
-"thegirl_spills_norm_theblick.mp3",
-"norm_findtheblick.mp3",
-"thedax_eats_norm_theapple.mp3",
-"thedax_spills_norm_thejuice.mp3",
-"thedax_spills_norm_themilk.mp3",
-"thedax_drinks_norm_thejuice.mp3",
-"thedax_kicks_norm_theapple.mp3",
-"thedax_eats_norm_thecookie.mp3",
-"thedax_drinks_norm_themilk.mp3",
-"thedax_kicks_norm_theball.mp3",
-"norm_wherethedax.mp3",
-"thebaby_drinks_norm_themodi.mp3",
-"theboy_eats_norm_themodi.mp3",
-"thedoctor_drinks_norm_themodi.mp3",
-"thedoctor_kicks_norm_themodi.mp3",
-"theboy_spills_norm_themodi.mp3",
-"thegirl_eats_norm_themodi.mp3",
-"thebaby_kicks_norm_themodi.mp3",
-"thegirl_spills_norm_themodi.mp3",
-"norm_findthemodi.mp3",
-"thedoctor_spills_norm_thekita.mp3",
-"theboy_drinks_norm_thekita.mp3",
-"thebaby_eats_norm_thekita.mp3",
-"thegirl_kicks_norm_thekita.mp3",
-"thebaby_spills_norm_thekita.mp3",
-"theboy_kicks_norm_thekita.mp3",
-"thegirl_eat_norm_thekita.mp3",
-"thegirl_drinks_norm_thekita.mp3",
-"norm_wherethekita.mp3",
-"thenoop_spills_norm_thejuice.mp3",
-"thenoop_eats_norm_thecookie.mp3",
-"thenoop_spills_norm_themilk.mp3",
-"thenoop_eats_norm_theapple.mp3",
-"thenoop_drinks_norm_thejuice.mp3",
-"thenoop_kicks_norm_theball.mp3",
-"thenoop_drinks_norm_themilk.mp3",
-"thenoop_kicks_norm_theapple.mp3",
-"norm_wherethenoop.mp3",
-  "wow_cool_x4.mp3"
+  "norm_lookatthat.wav",
+"norm_wowthatscool.wav",
+"norm_noopspillsjuice.wav",
+"norm_noopeatsapple.wav",
+"norm_noopdrinksmilk.wav",
+"norm_noopkicksball.wav",
+"norm_noopdrinksjuice.wav",
+"norm_noopeatscookie.wav",
+"norm_wherethenoop.wav",
+"norm_babydrinkskita.wav",
+"norm_boyeatskita.wav",
+"norm_doctorkickskita.wav",
+"norm_babyspillskita.wav",
+"norm_doctoreatskita.wav",
+"norm_girldrinkskita.wav",
+"norm_wherethekita.wav",
+"norm_doctorkicksmodi.wav",
+"norm_girldrinksmodi.wav",
+"norm_boyeatsmodi.wav",
+"norm_babyspillsmodi.wav",
+"norm_babyeatsmodi.wav",
+"norm_doctordrinksmodi.wav",
+"norm_findthemodi.wav",
+"norm_daxkicksball.wav",
+"norm_daxeatsapple.wav",
+"norm_daxdrinksmilk.wav",
+"norm_daxspillsjuice.wav",
+"norm_daxeatscookie.wav",
+"norm_daxdrinksjuice.wav",
+"norm_wherethedax.wav",
+"norm_girldrinksblick.wav",
+"norm_babyspillsblick.wav",
+"norm_doctorkicksblick.wav",
+"norm_boyeatsblick.wav",
+"norm_babydrinksblick.wav",
+"norm_doctoreatsblick.wav",
+"norm_findtheblick.wav",
+"norm_cheemeatscookie.wav",
+"norm_cheemkicksball.wav",
+"norm_cheemdrinksjuice.wav",
+"norm_cheemeatsapple.wav",
+"norm_cheemdrinksmilk.wav",
+"norm_cheemspillsjuice.wav",
+"norm_findthecheem.wav",
+"norm_tomaeatscookie.wav",
+"norm_tomaspillsjuice.wav",
+"norm_tomadrinksmilk.wav",
+"norm_tomaeatsapple.wav",
+"norm_tomakicksball.wav",
+"norm_tomadrinksjuice.wav",
+"norm_wherethetoma.wav",
+"norm_boyeatswug.wav",
+"norm_girldrinkswug.wav",
+"norm_doctorkickswug.wav",
+"norm_babyspillswug.wav",
+"norm_babyeatswug.wav",
+"norm_doctordrinkswug.wav",
+"norm_findthewug.wav",
 ];
 
 var preload_audio  = [];
@@ -408,7 +317,11 @@ var video = [
   "underarmthrow_s_5520.mp4",
   "underarmthrow_u_5520.mp4",
   "walker_s_5520.mp4",
-  "walker_u_5520.mp4"
+  "walker_u_5520.mp4",
+  "Clouds6.mp4",
+  "Galaxies_3.mp4",
+  "Rainbow_4.mp4",
+  "Kaleidoscope6.mp4"
 ];
 
 var preload_vids=[];
@@ -425,7 +338,7 @@ function startExperiment(data) {
 jsPsych.init({ //js.psych initializes
   timeline: timeline,
   preload_audio:preload_audio,
-  preload_images:preload_images,
+  //preload_images:preload_images,
   preload_video: preload_vids,
 	default_iti: 500,
   on_finish: function() {
