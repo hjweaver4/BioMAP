@@ -20,7 +20,7 @@ block,trial_number,auditory_stimulus,left_video,right_video,target_side,center_v
 5,19,norm_cheemdrinksjuice,,,AG,Rainbow_4,,center,black-background,agent,fam
 5,20,norm_cheemeatsapple,,,AG,Rainbow_4,,center,black-background,agent,fam
 5,21,norm_cheemdrinksmilk,,,AG,Rainbow_4,,center,black-background,agent,fam
-5,22,norm_cheemspillsjuice,Rainbow_4,Rainbow_4,AG,Rainbow_4,,center,black-background,agent,fam
+5,22,norm_cheemspillsjuice,,,AG,Rainbow_4,,center,black-background,agent,fam
 5,23,norm_findthecheem,walker_u_5520,walker_s_5520,left,,1,both,black-background,agent,test
 6,24,norm_girldrinksblick,,,AG,Kaleidoscope6,,center,black-background,patient,fam
 6,25,norm_babyspillsblick,,,AG,Kaleidoscope6,,center,black-background,patient,fam
