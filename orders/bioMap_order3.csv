@@ -1,6 +1,6 @@
 block,trial_number,auditory_stimulus,left_video,right_video,target_side,center_video,correct_response,playing_side,background,condition,trial_type
-1,1,norm_lookatthat,underarmthrow_s_5520,underarmthrow_u_5520,,,,both,black-background,practice,fam
-2,2,norm_wowthatscool,jumpingjacks_u_5520,jumpingjacks_s_5520,,,,both,black-background,practice,fam
+1,1,norm_lookatthat,underarmthrow_s_5520,underarmthrow_u_5520,,,,both,black-background,practice,test
+2,2,norm_wowthatscool,jumpingjacks_u_5520,jumpingjacks_s_5520,,,,both,black-background,practice,test
 3,3,norm_boyeatsnoop,,,AG,Galaxies_3,,center,black-background,patient,fam
 3,4,norm_girldrinksnoop,,,AG,Galaxies_3,,center,black-background,patient,fam
 3,5,norm_doctorkicksnoop,,,AG,Galaxies_3,,center,black-background,patient,fam
