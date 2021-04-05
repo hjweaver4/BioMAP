@@ -108,6 +108,7 @@ function createTrials(data) {
     //var cur_images = [imageStart+data[i]['left_image']+imageStop, imageStart+data[i]['right_image']+imageStop];
     var cur_left_video = videoStart+data[i]['left_video']+videoStop;
     var cur_right_video = videoStart+data[i]['right_video']+videoStop;
+    var cur_center_video = videoStart+data[i]['center_video']+videoStop;
     var cur_side = data[i]['playing_side'];
 
     //define html buttons
@@ -115,17 +116,17 @@ function createTrials(data) {
     var cur_right_video_button = '<div><video id="right-video" width="450" muted></div>';
     var cur_left_video_button_play = '<div><video id="left-video-play" width="450" autoplay muted ></div>';
     var cur_right_video_button_play = '<div><video id="right-video-play" width="450" autoplay muted ></div>';
+    var cur_center_video_button = '<div><video id="center-video" width="800" muted ></div>';
+    var cur_center_video_button_play = '<div><video id="center-video-play" width="800" autoplay muted ></div>';
 
     //define set up visual display
     var cur_background = data[i]['background'];
 
+    // define trial type
     if (cur_trial_type == "fam"){
-      if (cur_side == "right") {
-        var button_html = [cur_left_video_button,cur_right_video_button_play];
-		var selector_ids = ['left-video','right-video-play'];
-      } else if (cur_side == "left"){
-        var button_html = [cur_left_video_button_play,cur_right_video_button];
-		var selector_ids = ['left-video-play','right-video'];
+      if (cur_side == "center") {
+        var button_html = [cur_center_video_button_play];
+		    var selector_ids = ['center-video-play'];
       } else {
         var button_html = [cur_left_video_button_play,cur_right_video_button_play];
 		    var selector_ids = ['left-video-play','right-video-play'];
@@ -136,7 +137,7 @@ function createTrials(data) {
         type: 'audio-button-response-flexiblelocations',
         preload_video_button: true,
         stimulus: cur_stimulus,
-        choices:[cur_left_video,cur_right_video],
+        choices:[cur_center_video],
         button_html: button_html,
 			  selector_ids: selector_ids,
         //choices: cur_images,
@@ -146,13 +147,12 @@ function createTrials(data) {
         //tiral_duration: 120000,
         margin_top: ['0px','0px'],
         margin_bottom: ['0px','0px'],
-        margin_left: ['0px','100px'],
-        margin_right: ['100px','0px'],
+        margin_left: ['0px','0px'],
+        margin_right: ['0px','0px'],
+        post_trial_gap: 1000,
         response_ends_trial: false,
         data:{
-    		left_video: data[i]['left_video'],
-    		right_video: data[i]['right_video'],
-    		//target_label: data[i]['target_label'],
+        center_video: data[i]['center_video'],
     		target_side: data[i]['target_side'],
         trial_type: data[i]['trial_type'],
         condition: data[i]['condition'],
